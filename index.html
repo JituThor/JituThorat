@@ -16,20 +16,21 @@
 <body>
     <nav class="navbar">
         <ul class="link-group">
-            <li class="link active"><a href="#">home</a></li>
-            <li class="link"><a href="#">projects</a></li>
-            <li class="link"><a href="#">about</a></li>
-            <li class="link"><a href="#">contact</a></li>
+            <li class="link" id="sectionHome"><a href="#">home</a></li>
+            <li class="link" id="sectionProjects"><a href="#">projects</a></li>
+            <li class="link" id="sectionAbout"><a href="#">about</a></li>
+            <li class="link" id="sectionContact"><a href="#">contact</a></li>
+            <li class="link" id="sectionSkills"><a href="#">skills</a></li>
         </ul>
     </nav>
 
-    <section class="home-section active">
+    <section class="home-section active" hidden>
         <h1 class="hero-heading">hello, i am <br> Jitendra</h1>
         <img src="images/heroImage.jpeg" class="home-img" alt="">
     </section>
 
     <!-- project section -->
-<section class="project-section active">
+<section class="project-section active" hidden>
     <h1 class="project-heading">some of my projects</h1>
     <div class="project-container">
         <div class="project-card">
@@ -88,7 +89,7 @@
 </section>
 
 <!-- about section -->
-<section class="about-section active">
+<section class="about-section active" hidden>
     <div class="about">
         <div class="about-img-container">
             <img src="images/about.jpeg" class="about-img" alt="">
@@ -99,69 +100,105 @@
 </section>
 
 <!-- skills -->
-<div class="skill-section">
+<div class="skill-section active" hidden>
     <h1 class="heading">skills</h1>
     <div class="skills-container">
         <div class="skill-card">
-            <img src="img/html.png" class="skill-img" alt="">
+            <img src="images/DeathNote.png" class="skill-img" alt="">
             <div class="skill-level">98%</div>
             <h1 class="skill-name">Basic HTML</h1>
-            <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+            <p class="skill-info">Description !</p>
         </div>
         <div class="skill-card">
-            <img src="img/html.png" class="skill-img" alt="">
+            <img src="images/DRAGON BALL.jpg" class="skill-img" alt="">
             <div class="skill-level">98%</div>
             <h1 class="skill-name">Basic CSS</h1>
-            <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+            <p class="skill-info">Description !</p>
         </div>
         <div class="skill-card">
-            <img src="img/html.png" class="skill-img" alt="">
+            <img src="images/pain naruto.jpg" class="skill-img" alt="">
             <div class="skill-level">98%</div>
             <h1 class="skill-name">.NET</h1>
-            <p class="skill-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!</p>
+            <p class="skill-info">Description !</p>
         </div>
     </div>
 </div>
 
 <!-- timeline -->
 <div class="timeline">
-    <h1 class="heading">education and experience</h1>
+    <h1 class="heading">Education And Experience</h1>
     <div class="card">
         <div class="card-body">
-            <h1 class="card-title">2000-2002</h1>
-            <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+            <h1 class="card-title">SSC <br/>2011</h1>
+            <p class="card-detail">School : Smt. Indira Gandhi Vidyalaya</p>
         </div>
     </div>
     <div class="card">
         <div class="card-body">
-            <h1 class="card-title">2000-2002</h1>
-            <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+            <h1 class="card-title">HSC <br/>2013</h1>
+            <p class="card-detail">Junior College : Swami Vivekanand Jr. College</p>
         </div>
     </div>
     <div class="card">
         <div class="card-body">
-            <h1 class="card-title">2000-2002</h1>
-            <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+            <h1 class="card-title">BE(EXTC) <br/>2020</h1>
+            <p class="card-detail">College : Saraswati Education Society</p>
         </div>
     </div>
 </div>
 
 <!-- contact section -->
-<section class="contact-section active">
+<!-- <section class="contact-section">
     <form class="contact-form">
         <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
         <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
         <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
         <button type="submit" class="form-submit-btn">contact</button>
-    </form>
+    </form>-->
     <!-- map -->
-    <div class="map">
+    <!--<div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.163742937!2d76.81306771991275!3d28.647279935262464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1639489002410!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-</section>
+</section> -->
 
 
     <!-- load javascript after loading all html content -->
     <script src="script/script.js"></script>
 </body>
 </html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(".link").click(function(){
+        $(".home-section").attr("hidden", true);
+        $(".project-section").attr("hidden", true);
+        $(".about-section").attr("hidden", true);
+        $(".skill-section").attr("hidden", true);
+        $(".contact-section").attr("hidden", true);
+
+    var sec = $(this).text();
+        console.log(sec);
+
+    if(sec == "home")
+    {
+        $(".home-section").attr("hidden", false);
+    }
+    else if(sec == "projects")
+    {
+        $(".project-section").attr("hidden", false);
+        $(".project-section").append("active");
+    }
+    else if(sec == "about")
+    {
+        $(".about-section").attr("hidden", false);
+    }
+    else if(sec == "skills")
+    {
+        $(".skill-section").attr("hidden", false);
+    }
+    else if(sec == "contact")
+    {
+        $(".contact-section").attr("hidden", false);
+    }
+});
+</script>
